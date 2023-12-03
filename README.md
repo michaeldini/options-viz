@@ -23,5 +23,5 @@ or
 ```bash
 python3 options.py
 ```
-A prompt should as what stock ticker you would like to research. Enter a valid ticker (lowercase or uppercase) and hit enter. The program should run and save a few image files in the current directory. Open the images from the file explorer. Researching the same stock a second time will overwrite the previous images. 
+A prompt should ask what stock ticker you would like to research. Enter a valid ticker (lowercase or uppercase) and hit enter. The program should run and save a few image files in the current directory. Open the images from the file explorer. Researching the same stock a second time will overwrite the previous images. 
 
