@@ -5,7 +5,7 @@ simple options visualization
 
 1. Download the repository by copying this code and run it in a terminal. A new folder will be created.
 ```bash 
-pip clone https://github.com/michaeldini/options-viz.git 
+git clone https://github.com/michaeldini/options-viz.git 
 ```
 
 2. Still in the terminal and inside the repository folder, copy this code and run it.
