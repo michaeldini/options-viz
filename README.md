@@ -12,7 +12,7 @@ git clone https://github.com/michaeldini/options-viz.git
 ```bash
 pip install -r requirements.txt
 ```
-### Updateing
+### Updating
 While in the terminal and inside the repository folder, run the following code:
 ```bash
 git pull
