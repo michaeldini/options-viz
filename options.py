@@ -1,7 +1,13 @@
 from matplotlib import pyplot as plt
+import seaborn as sns
 import numpy as np
 import yfinance as yf
 import pandas as pd
+
+sns.set_theme(style="darkgrid")
+width = 20
+height = 8
+sns.set(rc={'figure.figsize': (width, height)})
 
 
 def gather_option_data(ticker: str):
@@ -52,10 +58,15 @@ def gather_option_data(ticker: str):
 
 
 def visualize_options(ticker: str, data: dict):
+    price = data['current_price']
     for title, df in data['dfs'].items():
-        df.fillna(0).plot(title=title, figsize=(
-            14, 8))
+        df = df.fillna(0)
+        plot_title = title.replace('_', ' ').title()
+        sns.lineplot(data=df).set(title=plot_title)
+        plt.axvline(price, c='black')
+        plt.annotate(str(price), (price, df.max().max()))
         plt.savefig(f'{ticker}_{title}.png')
+        plt.clf()
 
 
 def heatmap_options(ticker, data):
