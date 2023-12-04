@@ -53,7 +53,7 @@ def gather_option_data(ticker: str):
 
 def visualize_options(ticker: str, data: dict):
     for title, df in data['dfs'].items():
-        df.replace(0, np.nan).plot(title=title, figsize=(
+        df.fillna(0).plot(title=title, figsize=(
             14, 8))
         plt.savefig(f'{ticker}_{title}.png')
 
