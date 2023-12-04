@@ -1,7 +1,7 @@
 # options-viz
 simple options visualization
 
-# Installation
+# Installation & Updates
 
 1. Download the repository by copying this code and run it in a terminal. A new folder will be created.
 ```bash 
@@ -12,6 +12,13 @@ git clone https://github.com/michaeldini/options-viz.git
 ```bash
 pip install -r requirements.txt
 ```
+### Updateing
+While in the terminal and inside the repository folder, run the following code:
+```bash
+git pull
+```
+Changes should be automatically downloaded and you can run the program. 
+
 
 # Usage
 
